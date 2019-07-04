@@ -1,0 +1,35 @@
+<html>
+    <script>
+    let preco1 = prompt('Digite o primeiro preço');
+    let preco2 = prompt('Digite o segundo preço');
+    let preco3 = prompt('Digite o terceiro terceiro');
+
+    preco1 = parseFloat(preco1);
+    preco2 = parseFloat(preco2);
+    preco3 = parseFloat(preco3);
+
+   
+
+    let menor = preco1;
+
+    if (preco2 < preco1 && preco2 < preco3 ) {
+        menor = preco2;
+    } else if(preco3 < preco2 && preco3 < preco1){
+        menor = preco3;
+    } else if(preco1 == preco2 && preco1 < preco3 && preco2 < preco3){
+        menor = preco2;
+    } else if(preco1 == preco3 && preco1 < preco2 && preco3 < preco2){
+        menor = preco3;
+    } else if(preco3 == preco2 && preco3 < preco1 && preco3 < preco1){
+        menor = preco3;
+    }
+
+    if(preco1 == preco2 && preco1 == preco3){
+        alert('OBS: Todos os preços são iguais a R$ ' + preco1)
+    } else {
+        alert('O melhor preço é R$ ' + menor);
+    }
+   
+       
+    </script>
+</html>
