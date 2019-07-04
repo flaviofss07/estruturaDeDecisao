@@ -1,0 +1,20 @@
+<html>
+<script>
+    let numero1 = prompt('Digite o pimeiro número');
+    let numero2 = prompt('Digite o segundo número');
+    let numero3 = prompt('Digite o terceiro número');
+    numero1 = parseFloat(numero1);
+    numero2 = parseFloat(numero2);
+    numero3 = parseFloat(numero3);
+
+    if (numero2 < numero1 && numero2 > numero3 ) {
+        alert('A sequência decrescente é ' + numero3 +', '+ numero2 +' e '+ numero1 );   
+    } else if (numero2 > numero1 && numero1 < numero3 ){
+        alert('A sequência decrescente é ' + numero3 +', '+ numero2 +' e '+ numero1 );
+    }else if (numero3 > numero1 && numero1 < numero2 ) {
+        alert('A sequência decrescente é ' + numero2 +', '+ numero1 +' e '+ numero3 );
+    }
+    
+</script>
+
+</html>
