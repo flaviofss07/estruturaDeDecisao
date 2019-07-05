@@ -1,5 +1,6 @@
 <html>
     <script>
+        
     let numero1 = prompt('Digite um número para comparar com o próximo');
     let numero2 = prompt('Digite o segundo número para comparação');
     let numero3 = prompt('Digite o terceiro número para comparação');
@@ -7,7 +8,7 @@
     numero1 = parseFloat(numero1);
     numero2 = parseFloat(numero2);
     numero3 = parseFloat(numero3);
-
+ 
     let maior = numero1;
 
     if (numero2 > numero1 && numero2 > numero3 ) {
@@ -41,7 +42,26 @@
     } else {
         alert('O número ' + maior + ' é o maior. O número ' + menor + ' é o menor.');
     }
-   
+    
+   // Solução do professor
+   /*
+    let numero1 = prompt('Digite um número para comparar com o próximo');
+    let maior = numero1;
+    let menor = numero1;
+    let numero2 = prompt('Digite o segundo número para comparação');
+    if(numero2 > maior){
+        maior = numero2;
+    }else {
+        menor = numero2;
+    }
+    let numero3 = prompt('Digite o terceiro número para comparação');
+    if(numero3 > maior){
+        maior = numero3;
+    } else if(numero3 < menor){
+        menor = numero3;
+    }
+    alert('Maior: ' + maior + '\nMenor: ' + menor);
+    */
        
     </script>
 </html>

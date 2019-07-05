@@ -1,21 +1,25 @@
 <html>
 
 <script>
-    let nota1 = prompt('Digite a primeira nota');
-    let nota2 = prompt('Digite a segunda nota');
+    let nota1 = parseFloat(prompt('Digite a primeira nota'));
+    let nota2 = parseFloat(prompt('Digite a segunda nota'));
 
-    nota1 = parseFloat(nota1);
-    nota2 = parseFloat(nota2);
+    let media = (nota1 + nota2) / 2;
+    let resposta = 'Reprovado';
 
-    let media = (nota1 + nota2)/2;
-
-    if (media == 10) {
-        alert('O aluno está aprovado com Distinção' );
-    } else if(media > 7 && media < 10) {
-        alert('O aluno está aprovado');
+    if (isNaN(media) || media < 0 || media > 10) {
+        resposta = 'Entrada invalida!';
     } else {
-        alert('O aluno está reprovado');
+        if (media == 10) {
+            resposta = 'O aluno está aprovado com Distinção';
+        } else if (media >= 7) {
+            resposta = 'O aluno está aprovado';
+        }
     }
+    alert(resposta + ' - Nota: ' + media.toFixed(2));
+    
+
+
 </script>
 
 </html>
