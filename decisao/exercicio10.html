@@ -2,7 +2,7 @@
 <script>
     let turno = prompt('Digite o seu turno: M para matutino ou V para vespertino ou N para nortuno');
 
-    turno = turno.toLowerCase().trim();
+    turno = turno.toLowerCase().trim().charAt(0);
 
 
     switch (turno) {
@@ -17,7 +17,7 @@
             break;
 
         default:
-            alert('Letra invalida!');
+            alert('Opção invalida!');
 
     }
 </script>
